@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Scrol suave */
+html {
+  scroll-behavior: smooth;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    text-align: left;     /* obliga a alinear a la izquierda */
+    padding-left: 20px;   /* para que la viñeta se vea normal */
+    margin: 0;
+}
+
+.lista ul {
+  
+}
+
+body {
+    background: linear-gradient(to bottom, #1F2937, #0B0A0A);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 32px;
+    justify-content: center;
+    margin: 60px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-menu a:hover {
+    color: #FFCC00; /* cambia texto */
+    background-color: rgba(0, 0, 0, 0.05); /* opcional: fondo suave */
+}
+
+/* Empezamos con los estilos del main */
+
+.container-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+
+.container-info-texto .saludo {
+    font-size: 20px;
+}
+.container-info-texto .profesion {
+    color: #FFCC00;
+    font-size: 48px;
+    font-weight: bold;
+}
+.container-info-texto .informacion {
+    font-size: 12px;
+}
+.container-info-botones {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+.container-info-img img {
+    border-radius: 20px;
+    width: 400px;
+}
+
+.btn-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* espacio entre icono y texto */
+    padding: 4px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50px; /* hace la forma de píldora */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.btn-info img {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-info:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Empezamos con container habiliades */
+
+.container-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.habilidades-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+
+}
+.subcontainer-habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+.subcontainer-habilidades li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+}
+
+/* Empezamos con estilos para experiencia laboral */
+
+.container-experiencia-laboral {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;    /* una experiencia debajo de la otra */
+    align-items: center;       /* centra el bloque completo */
+    margin: 0 auto;
+}
+
+.container-experiencia-laboral > div {
+    width: 70%;                /* define un ancho para que parezca texto centrado */
+    text-align: left;          /* alinea el texto hacia la izquierda */
+    margin-bottom: 30px;       /* separación entre experiencias */
+}
+.titulo-experiencia-laboral {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 20px;
+}
+.titulo-trabajo {
+    font-size: 16px;
+    color: #FFCC00;
+    font-weight:bold;
+}
+.titulo-trabajo-puesto {
+    font-size: 14px;
+    font-weight:600;
+}
+
+/* Empezamos con estilos para proyectos */
+
+.container-proyectos {
+
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;    /* una experiencia debajo de la otra */
+    align-items: center;       /* centra el bloque completo */
+    margin: 0 auto;
+
+}
+
+
+.container-proyectos-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectos-titulo {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight:bold;
+    margin: 20px;
+}
+
+.container-proyectos1, .container-proyectos2, .container-proyectos3 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-proyectos-realizados {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container-proyectos1 img {
+    width: 360px;
+    border-radius: 20px;
+}
+.container-proyectos2 img {
+    width: 360px;
+    border-radius: 20px;
+}
+.container-proyectos3 img {
+    width: 360px;
+    border-radius: 20px;
+}
+
+/* Empezamos reglas para sobre mí */
+
+.container-sobremi {
+    max-width: 1000px;
+    align-items: center;       /* centra el bloque completo */
+    margin: 0 auto;
+    
+}
+
+.container-sobremi-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.container-sobremi-info img {
+
+}
+.titulo-sobremi {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Inicio de media query*/
+
+/* ========= TABLET (≤768px) ========= */
+@media (max-width: 768px) {
+
+    /* NAV */
+    p , ul {
+        text-align: left;
+    }
+   
+    .nav-menu ul {
+        gap: 16px;
+        margin: 40px 0;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .container-info {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+      
+    
+
+    .container-info-botones {
+        justify-content: center;
+    }
+
+  
+    
+
+    /* HABILIDADES */
+    .subcontainer-habilidades {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* EXPERIENCIA */
+    .container-experiencia-laboral {
+        width: 100%;
+    }
+
+    .container-experiencia-laboral > div {
+        width: 90%;
+    }
+
+    /* PROYECTOS */
+    .container-proyectos1,
+    .container-proyectos2,
+    .container-proyectos3 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container-proyectos1 img,
+    .container-proyectos2 img,
+    .container-proyectos3 img {
+        width: 220px;
+        height: auto;
+    }
+
+    .container-proyectos-info {
+        max-width: 90%;
+    }
+
+    /* SOBRE MÍ */
+    .container-sobremi {
+        pad: 20px;
+    }
+    .container-sobremi-info {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .img-sobremi {
+        width: 220px;
+        height: auto;
+    }
+
+     .container-proyectos img {
+        min-width: 500px;
+        height: auto;
+    }
+
+    
+     .container-sobremi img {
+        min-width: 500px;
+        height: auto;
+    }
+    
+}
+
+/* ========= MÓVILES (≤576px) ========= */
+@media (max-width: 576px) {
+
+    /* NAV */
+    .nav-menu {
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-menu ul {
+        flex-direction: row;
+        
+    }
+
+    .btn-info {
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+    .container-info-img img {
+        max-width: 360px;
+        height: auto;
+    }
+    .container-proyectos img {
+        min-width: 360px;
+        height: auto;
+    }
+
+    .container-sobremi-info {
+        margin: 20px;
+    }
+     .container-sobremi img {
+        min-width: 360px;
+        height: auto;
+    }
+    }
+
+    
+
+
+
+
+
